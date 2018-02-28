@@ -1,0 +1,12 @@
+<sd-tabs>
+  <div class="items related-things">
+    <sd-tab class="items related-thing" 
+            ng-repeat="ti in $ctrl.relatedThings | orderBy:'thing_name'" 
+            label="{{ti.thing_name}}">
+      <img ng-src="{{ti.image_content_url}}?width=100"/>
+      <span class="name">{{ti.thing_name}}</span>
+      <br/>
+      <span class="description">{{ti.description}}</span>
+    </sd-tab>
+  </div>
+</sd-tabs>

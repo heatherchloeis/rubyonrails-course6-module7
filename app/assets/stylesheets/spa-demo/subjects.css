@@ -27,6 +27,19 @@ div.subjects-page {
   padding-right: 0px;
 }
 
+div.image-things-page {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+div.image-things-page > sd-areas > div > ul.nav-pills {
+  display: none;
+}
+
+div.image-things-page [type=checkbox] {
+  display: none;
+}
+
 div.thing-info span.id {
   display: none;
 }

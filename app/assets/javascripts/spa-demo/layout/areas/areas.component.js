@@ -83,7 +83,12 @@
     //console.log("countActive", collection, areasActive);
     return areasActive;
   }
-
+  AreasController.prototype.showAll = function(position) {
+    var collection = this.getAreas(position);
+    for (var i = 0; i < collection.length; i++) {
+      collection[i].show = true;
+    }
+  }
 
   AreaController.$inject = ["$scope"];
   function AreaController($scope) {

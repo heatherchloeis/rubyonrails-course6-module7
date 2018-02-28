@@ -1,0 +1,13 @@
+<sd-tabs>
+  <sd-tab label="Images">
+    <ul class="items images">
+      <li ng-repeat="ti in $ctrl.images | orderBy:'image_caption'" 
+          ng-class="{selected: $ctrl.isCurrentImage(ti.image_id)}">
+        <a ng-click="$ctrl.imageClicked(ti.image_id)">
+          <img ng-src="{{ti.image_content_url}}?width=100"/>
+          <span class="caption">{{ti.image_caption}}</span>
+        </a>
+      </li>
+    </ul>
+  </sd-tab>
+</sd-tabs>
